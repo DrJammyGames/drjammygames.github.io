@@ -1,26 +1,74 @@
 /*RGB values are from logo image I've created*/
 body{    
-    background-image: url("/images/Background.jpg");    
+    background: linear-gradient(rgba(48,48,48,0.1), rgba(255,255,255,0.1)), url("/images/Background.jpg");  
+    /*Sets drop shadow for entire page*/
+    text-shadow: 1px 1px black;   
 }
+/*Change font sizes for headers, paragraphs, and lists*/
+h1{
+    font-size: 36px; 
+}
+p{
+    font-size: 20px;
+}
+li{
+    font-size: 20px;
+}
+table, th, td{
+    table-layout: fixed;
+    border: 3px inset white;    
+    font-size: 20px; 
+    margin-bottom: 20px;
+    width: 100%;
+}
+/*Top of page, different background colour and has margins on all sides*/
 #top{
-    background-color: rgb(68,68,68);
-    color: white
+    background-color: rgba(35,115,116,0.97);
+    color: white;
+    margin: 10px;    
+}
+img{
+    border: inset white 2px;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 .row{     
-    background-color: rgb(98,98,98);
+    background-color: rgba(137, 189, 190, 0.96);
     color: white;
-    justify-content: center;   
-    
+    justify-content: center; 
+    margin-top: 10px;      
+    margin-left: 10px;
+    margin-right: 10px;
 }
-hr{   
-    border: none;
+/*Keeps the boxes of title and info together but keeps them as separate divs*/
+#info{
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;       
+}
+/*Adds space at the bottom of the page so it doesn't just end*/
+#quote{
+    margin-bottom: 10px;
+}
+hr{     
     /*Set thicker borders*/
-    border-top: 5px solid rgb(94, 0, 209);
+    border: 3px solid white;
 }
-/*Change background color to white and text to black if width is 480px or less*/
+/*Change background color to white and text to black if width is 480px or less
+Also removes text shadow, not needed with a white background*/
 @media screen and (max-width: 480px) {
     .row{
         background-color: white;
+        text-shadow: none;
         color: black;
     }   
+    #top{
+        background-color: white;
+        text-shadow: none;
+        color: black;
+    }
 }

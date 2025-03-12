@@ -12,9 +12,9 @@
 <body>    
     <div class="container">
         <!--ID top is referenced in styles.css to change background colour-->
-        <div id="top" class="row" >
-            <!--col-md-2 allows for space between the image and text-->
-            <div class="col-md-2"><img src="/images/avatar no background.png" width="100px" class="img-fluid"></div>
+        <div id="top" class="row">
+            <!--col-md-2 allows for space between the image and text Set border and margin to 0 here to overwrite what's in the CSS file-->
+            <div class="col-md-2"><img src="/images/avatar no background.png" width="100px" class="img-fluid" style="border:0px; margin-bottom: 0px;"></div>
             <!--col-md-9 Allows for the text to take up the rest of the browser space-->
             <div class="col-md-9 text-end">                
                 <h1>Dr Yemaya Halbrook</h1>
@@ -25,51 +25,64 @@
         </div>
         <div class="row">
             <div class="col">
-                <h2>About me</h2>
-               
+                <h1>About me</h1>               
             </div>
             <hr>
         </div>
-        <div class="row">
+        <div id="info" class="row">
             <div class="col text-left">
                 <p>I am a huge nerd. Add a whole bunch of other info here</p>                
             </div>
-            <div class="col-md-3 text-right">
-                <img src="/images/Bio pic.jpg" width="200px">
+            <div class="col-md-2">
+                <img src="/images/Bio pic.jpg" class="img-fluid">
             </div>
-            <hr>
         </div>
         <div class="row">
             <div class="col">
-                <h2>Skills and Interests</h2>                
+                <h1>Skills and Interests</h1>                
             </div>   
             <hr>       
         </div>
-        <div class="row">
+        <div id="info" class="row">
             <div class="col">
-                <p>Table here</p>                
-            </div>  
-            <hr>        
+                <table>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Advanced</td>
+                    </tr>  
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Advanced</td>
+                    </tr>                  
+                </table>         
+            </div>     
         </div>
         <div class="row">
             <div class="col">
-                <h2>Future Goals</h2>                
+                <h1>Future Goals</h1>                
             </div>   
             <hr>       
         </div>
-        <div class="row">
+        <div id="info"class="row">
             <div class="col">
                 <p>Add here whatever my future goals are</p>                
             </div>
-            <hr>
         </div>
         <div class="row">
             <div class="col">
-                <h2>Reflections and Future Plans</h2>                
+                <h1>Reflections and Future Plans</h1>                
             </div>   
             <hr>       
         </div>
-        <div class="row">
+        <div id="info" class="row">
             <div class="col">
                 <ul>
                     <li>How does the page represent me?</li>
@@ -77,14 +90,11 @@
                     <li>What features would I implement with more web development skills?</li>
                 </ul>          
             </div>
-            <hr>
         </div>
-        <div class="row" >
+        <div id="quote" class="row" >
             <div class="col text-center">
-                <p>"Video games are bad for you? That's what they said about rock 'n' roll."</p>      
-                <p>Shigeru Miyamoto</p> 
+                <p>"Video games are bad for you? That's what they said about rock 'n' roll."<br>Shigeru Miyamoto</p>                    
             </div>
-            <hr>
         </div>
     </div>
 </body>
