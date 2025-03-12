@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Name of site-->
     <title>Dr Jammy</title>    
     <!--Import Bootstrap stuffs-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
@@ -11,13 +12,15 @@
 </head>
 <body>    
     <div class="container">
-        <!--ID top is referenced in styles.css to change background colour-->
+        <!--ID top is referenced in styles.css to change background colour as it's different than the rest-->
         <div id="top" class="row">
-            <!--col-md-2 allows for space between the image and text Set border and margin to 0 here to overwrite what's in the CSS file-->
+            <!--col-md-2 allows for space between the image and text Set border and margin to 0 here to overwrite what's in the CSS file
+            Fluid image to change with browser width-->
             <div class="col-md-2"><img src="/images/avatar no background.png" width="100px" class="img-fluid" style="border:0px; margin-bottom: 0px;"></div>
             <!--col-md-9 Allows for the text to take up the rest of the browser space-->
             <div class="col-md-9 text-end">                
                 <h1>Dr Yemaya Halbrook</h1>
+                <!--Hyperlink to automatically open and format an email to my gmail account-->
                 <a href="mailto: yemayahalbrookphd@gmail.com"> 
                     <p>yemayahalbrookphd@gmail.com</p>
                 </a>
@@ -27,13 +30,18 @@
             <div class="col">
                 <h1>About me</h1>               
             </div>
+            <!--Using hr to separate the title with the actual paragraph information. Looks nicer and can use one row class-->
             <hr>
         </div>
+        <!--Specifying info as an id so that I can ensure there is no margin at the top. Looks nicer this way-->
         <div id="info" class="row">
+            <!--Indent the text to the left as I have an image on the right-->
             <div class="col text-left">
+                <!--About me bio information-->
                 <p>If someone asked me to describe myself in three words, I would say that I am pragmatic, motiovated, and a hardcore nerd. OK, so that's technically four words, but the 'hardcore' was required.<br><br>I am one part researcher, one part gamer, and one part developer. I received my MSc in psychology from the University of Limerick in 2016 and proceeded to complete a PhD in psychology in 2019. I am currently a computer science MSc student with the hopes of leaving the world of academia for the software industry. I utilise this psychological background not only to discern the most important aspects of video games, but also to apply this knowledge to my own software development. </p>                
             </div>
             <div class="col-md-2">
+                <!--Fluid image, keep border designated in CSS file-->
                 <img src="/images/Bio pic.jpg" class="img-fluid">
             </div>
         </div>
@@ -45,8 +53,10 @@
         </div>
         <div id="info" class="row">
             <div class="col">
+                <!--Create table with header then four rows and two columns. My skills and their corresponding skill level-->
                 <table>
                     <tr>
+                        <!--th for header-->
                         <th>Skill</th>
                         <th>Level</th>
                     </tr>
@@ -75,8 +85,9 @@
             </div>   
             <hr>       
         </div>
-        <div id="info"class="row">
+        <div id="info" class="row">
             <div class="col">
+                <!--Info about my future career goals-->
                 <p>I would like to develop accessibility software for the visually impaired. My eyesight is atrocious, and this causes me a multitude of issues when utilising various types of software. For my MSc thesis, I intend to develop a singular software that can adjust everything on the screen for the visually impaired. In a dream scenario, this will be picked up by Microsoft who will then implement it into their OS.</p>                
             </div>
         </div>
@@ -88,6 +99,7 @@
         </div>
         <div id="info" class="row">
             <div class="col">
+                <!--Answers to the questions in the assignment prompt-->
                 <h4>How does this page represent me?</h4>
                 <p>This page is a simple representation of who I am and what my future goals are.</p>
                 <br>
@@ -95,11 +107,12 @@
                 <p>I would separate the individual pieces of this singular page into separate tabs. This would allow me to have webpages that are dedicated to my work experience, portfolio, and education. A portfolio in particular is of utmost importance for the future.</p>
                 <br>
                 <h4>What features would I like to implement if I gained more web development skills?</h4>
-                <p>I would like to create a more interactive header that leads to other webpages such as my portfolio, as mentioned above. I would add gifs or videos on the landing page with examples of my previous work, such as my published game, <a href="https://store.steampowered.com/app/1568030/Too_Many_Cooks/"> Too Many Cooks</a>, on Steam.</p>                         
+                <p>I would like to create a more interactive header that leads to other webpages such as my portfolio, as mentioned above. I would add gifs or videos on the landing page with examples of my previous work, such as my published game, <a href="https://store.steampowered.com/app/1568030/Too_Many_Cooks/"> Too Many Cooks</a>, on Steam.</p>   <!--Hyperlink to my published game Steam page-->                      
             </div>
         </div>
         <div class="row" >
             <div class="col text-center">
+                <!--One of my favourite quotes-->
                 <p>"Video games are bad for you? That's what they said about rock 'n' roll."<br>Shigeru Miyamoto</p>                    
             </div>
         </div>
@@ -111,6 +124,7 @@
         </div>
         <div id="info" class="row">
             <div class="col" style="margin-bottom:10px">
+                <!--Image of the boxified design-->
                 <img src="/images/boxified-design.jpg" class="img-fluid" >
             </div>
         </div>

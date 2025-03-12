@@ -4,7 +4,7 @@ body{
     /*Sets drop shadow for entire page*/
     text-shadow: 1px 1px black;   
 }
-/*Change font sizes for headers, paragraphs, and lists*/
+/*Change font sizes for headers, and paragraphs*/
 h1{
     font-size: 36px; 
 }
@@ -14,9 +14,7 @@ h4{
 p{
     font-size: 18px;
 }
-li{
-    font-size: 20px;
-}
+/*Format tables to fit the entire page and be split down the middle*/
 table, th, td{
     table-layout: fixed;
     border: 3px inset white;    
@@ -30,6 +28,7 @@ table, th, td{
     color: white;
     margin: 10px;    
 }
+/*Add a border and some margins around the bio pick image so it looks nicer*/
 img{
     border: inset white 2px;
     max-width: 300px;
@@ -39,6 +38,7 @@ img{
     margin-right: auto;
     margin-bottom: 20px;
 }
+/*Set the rest of the rows (minus the top) and their colours*/
 .row{     
     background-color: rgba(35,115,116, 0.96);
     color: white;
@@ -52,10 +52,6 @@ img{
     margin: 0px;
     margin-left: 10px;
     margin-right: 10px;       
-}
-/*Adds space at the bottom of the page so it doesn't just end*/
-#design-process{
-    margin-bottom: 10px;
 }
 hr{     
     /*Set thicker borders*/
